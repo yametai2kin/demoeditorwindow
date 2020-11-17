@@ -11,6 +11,14 @@ public class MapEditorWindow : EditorWindow
     public MapEditor mapEditor = null;
 
     /// <summary>
+    /// 
+    /// </summary>
+    void OnEnable()
+    {
+        this.mapEditor = FindObjectOfType<MapEditor>();
+    }
+
+    /// <summary>
     /// GUI更新
     /// </summary>
     void OnGUI()
